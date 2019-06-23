@@ -1,0 +1,137 @@
+/************************* GÉNÉRAL *******************/
+body {
+    color: #588892;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+    background-image: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/************************* RÉCURRENTS *******************/
+
+.p1 {
+    padding: 5px;
+}
+
+.p2 {
+    padding: 15px;
+}
+
+.p3 {
+    padding: 30px;
+}
+
+.card-lign {
+    padding: 2px;
+    background-color: #588892;
+    border: none;
+    margin: 0;
+
+}
+
+.btn {
+    text-decoration: none;
+    background-color: #588892;
+    color: white;
+    border-radius: 7px;
+    /* transition-duration: 0.5s;
+    transition-timing-function: ease; */
+    border: none;
+    font-size: 1em;
+    font-weight: bold;
+    font: inherit;
+    line-height: inherit;
+    /* width: 35%; */
+    display: inline-block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 2px 4px 0 #324e53;
+    transition: all .2s;
+    transition-timing-function: cubic-bezier(.01, 1.01, 1, -0.02);
+}
+
+.btn:active {
+    box-shadow: 2px 2px 0 #324e53;
+    transform: translateY(2px);
+
+}
+
+.btn:hover {
+    background-color: #55a4b4;
+
+}
+
+/************************* CARD *******************/
+
+.card {
+    background-color: white;
+    width: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 1);
+
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    background-color: #bbf4ff;
+    position:relative;
+    transition:all;
+    transition-duration: 1s;
+    /* animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+    animation-timing-function: steps(4, end); */
+
+}
+
+.card-header:hover::before {
+    content: '';
+    background-color: rgba(15, 48, 54, 0.9);
+    height:180px;
+    width: 180px;
+    border-radius: 100%;
+    position:absolute;
+}
+.card-header:hover::after {
+    content: '+';
+    font-size:80px;
+    line-height: 150px;
+    color:white;
+    position:absolute;
+    cursor:pointer;
+
+}
+
+.rating {
+    direction: rtl;
+    display: flex;
+    justify-content: flex-end;
+ }
+ .rating a {
+    color: #aaa;
+    text-decoration: none;
+    font-size: 1.5em;
+    transition: color .4s;
+ }
+ .rating a:hover,
+ .rating a:focus,
+ .rating a:hover ~ a,
+ .rating a:focus ~ a {
+    color: #d16ba5;
+    cursor: pointer;
+ }
+
+.card-img {
+    height: 180px;
+    border-radius: 50%;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+}
